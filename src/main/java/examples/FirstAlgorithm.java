@@ -83,35 +83,40 @@ public class FirstAlgorithm extends javax.swing.JFrame {
         jLabel3.setText("Plain Text");
 
         jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
+        jTextArea1.setFont(new java.awt.Font("Monospaced", 0, 16)); // NOI18N
+        jTextArea1.setRows(4);
         jScrollPane1.setViewportView(jTextArea1);
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jLabel11.setText("Encription Key");
 
         jTextArea2.setColumns(20);
-        jTextArea2.setRows(5);
+        jTextArea2.setFont(new java.awt.Font("Monospaced", 0, 16)); // NOI18N
+        jTextArea2.setRows(4);
         jScrollPane2.setViewportView(jTextArea2);
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jLabel12.setText("Encrypted Encryption Key");
 
         jTextArea3.setColumns(20);
-        jTextArea3.setRows(5);
+        jTextArea3.setFont(new java.awt.Font("Monospaced", 0, 16)); // NOI18N
+        jTextArea3.setRows(4);
         jScrollPane3.setViewportView(jTextArea3);
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jLabel13.setText("Encrypted Text");
 
         jTextArea4.setColumns(20);
-        jTextArea4.setRows(5);
+        jTextArea4.setFont(new java.awt.Font("Monospaced", 0, 16)); // NOI18N
+        jTextArea4.setRows(4);
         jScrollPane4.setViewportView(jTextArea4);
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jLabel14.setText("Decrypted Text");
 
         jTextArea5.setColumns(20);
-        jTextArea5.setRows(5);
+        jTextArea5.setFont(new java.awt.Font("Monospaced", 0, 16)); // NOI18N
+        jTextArea5.setRows(4);
         jScrollPane5.setViewportView(jTextArea5);
 
         jLabel16.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
@@ -151,26 +156,24 @@ public class FirstAlgorithm extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(jPanel2Layout.createSequentialGroup()
-                        .add(jLabel15, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 78, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(jTextField7, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 99, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                        .add(0, 0, Short.MAX_VALUE))
+                .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                     .add(jPanel2Layout.createSequentialGroup()
                         .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                             .add(jPanel2Layout.createSequentialGroup()
-                                .add(0, 0, Short.MAX_VALUE)
+                                .add(236, 236, 236)
                                 .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                                     .add(jLabel17)
                                     .add(jLabel18)
                                     .add(jLabel19)))
                             .add(jPanel2Layout.createSequentialGroup()
-                                .add(jLabel16, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 78, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                .add(29, 29, 29)
+                                .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                                    .add(jLabel15, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 64, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                    .add(jLabel16))
                                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(jTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 99, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                .add(186, 186, 186)))
+                                .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                                    .add(jTextField7, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 99, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                    .add(jTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 99, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))))
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                             .add(jPanel2Layout.createSequentialGroup()
@@ -182,9 +185,9 @@ public class FirstAlgorithm extends javax.swing.JFrame {
                                 .add(18, 18, 18)
                                 .add(jButton3))
                             .add(jTextField6, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 99, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                        .add(23, 23, 23))
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, jPanel2Layout.createSequentialGroup()
-                        .add(15, 15, 15)
+                        .add(0, 38, Short.MAX_VALUE))
+                    .add(jPanel2Layout.createSequentialGroup()
+                        .add(30, 30, 30)
                         .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                             .add(jLabel3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 188, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                             .add(jLabel11, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 188, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
@@ -204,6 +207,8 @@ public class FirstAlgorithm extends javax.swing.JFrame {
         jPanel2Layout.linkSize(new java.awt.Component[] {jButton3, jButton4}, org.jdesktop.layout.GroupLayout.HORIZONTAL);
 
         jPanel2Layout.linkSize(new java.awt.Component[] {jLabel11, jLabel12, jLabel13, jLabel14, jLabel3}, org.jdesktop.layout.GroupLayout.HORIZONTAL);
+
+        jPanel2Layout.linkSize(new java.awt.Component[] {jTextField3, jTextField7}, org.jdesktop.layout.GroupLayout.HORIZONTAL);
 
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
