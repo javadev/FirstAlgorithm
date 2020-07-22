@@ -30,6 +30,8 @@
 
 package examples;
 
+import java.util.Base64;
+
 public class FirstAlgorithm extends javax.swing.JFrame {
     
     /** Creates new form Antenna */
@@ -305,7 +307,7 @@ public class FirstAlgorithm extends javax.swing.JFrame {
             cipher.init(javax.crypto.Cipher.ENCRYPT_MODE, skeySpec, iv);
 
             byte[] encrypted = cipher.doFinal(value.getBytes("UTF-8"));
-            return javax.xml.bind.DatatypeConverter.printBase64Binary(encrypted);
+            return new String(Base64.getEncoder().encode(encrypted), "UTF-8");
         } catch (Exception ex) {
             return "";
         }
@@ -319,10 +321,9 @@ public class FirstAlgorithm extends javax.swing.JFrame {
             javax.crypto.Cipher cipher = javax.crypto.Cipher.getInstance("AES/CBC/PKCS5PADDING");
             cipher.init(javax.crypto.Cipher.DECRYPT_MODE, skeySpec, iv);
 
-            byte[] original = cipher.doFinal(javax.xml.bind.DatatypeConverter.parseBase64Binary(encrypted));
+            byte[] original = cipher.doFinal(Base64.getDecoder().decode(encrypted));
 
-            final String decrypted = new String(original, "UTF-8");
-            return decrypted;
+            return new String(original, "UTF-8");
         } catch (Exception ex) {
             return "";
         }
