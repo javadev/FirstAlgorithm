@@ -116,46 +116,6 @@
                     </libs>
                 </configuration>
             </plugin>
-            <plugin>
-              <groupId>com.akathist.maven.plugins.launch4j</groupId>
-              <artifactId>launch4j-maven-plugin</artifactId>
-              <version>1.7.23</version>
-              <executions>
-                <execution>
-                  <id>l4j-clui</id>
-                  <phase>package</phase>
-                  <goals><goal>launch4j</goal></goals>
-                  <configuration>
-                    <headerType>console</headerType>
-                    <outfile>firstalgorithm.exe</outfile>
-                    <jar>firstalgorithm.jar</jar>
-                    <icon>${basedir}/firstalgorithm.ico</icon>
-                    <errTitle>firstalgorithm</errTitle>
-                    <classPath>
-                      <mainClass>examples.FirstAlgorithm</mainClass>
-                      <addDependencies>false</addDependencies>
-                      <preCp>anything</preCp>
-                    </classPath>
-                    <jre>
-                      <minVersion>1.7.0</minVersion>
-                      <initialHeapSize>128</initialHeapSize>
-                      <maxHeapSize>2560</maxHeapSize>
-                    </jre>
-                    <versionInfo>
-                      <fileVersion>11.0.0.0</fileVersion>
-                      <txtFileVersion>firstalgorithm</txtFileVersion>
-                      <fileDescription>firstalgorithm</fileDescription>
-                      <copyright>Copyright (c) 2020</copyright>
-                      <productVersion>11.0.0.0</productVersion>
-                      <txtProductVersion>firstalgorithm</txtProductVersion>
-                      <productName>firstalgorithm</productName>
-                      <internalName>firstalgorithm</internalName>
-                      <originalFilename>firstalgorithm.exe</originalFilename>
-                    </versionInfo>
-                  </configuration>
-                </execution>
-              </executions>
-            </plugin>
         </plugins>
     </build>
 
@@ -193,7 +153,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.13.1</version>
+            <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
